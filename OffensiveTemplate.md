@@ -37,9 +37,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 ## Target 1
   - `flag1.txt`: {b9bbcb33e11b80be759c4e844862482d}
     - **Exploit Used**
-      - WPScan to enumerate users on the Target1 Wordpress website.
-      - $ wpscan --url 192.168.1.110/wordpress
-      - $ wpscan --url 192.168.1.110 --enumerate -u
+          - WPScan to enumerate users on the Target1 Wordpress website.
+          - $ wpscan --url 192.168.1.110/wordpress
+          - $ wpscan --url 192.168.1.110 --enumerate -u
 
 <img width="620" alt="Screen Shot 2022-08-22 at 7 10 20 PM" src="https://user-images.githubusercontent.com/99222430/186041007-88a3320c-8270-4f16-802f-797c199596f5.png">
 
@@ -62,14 +62,14 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         
   - `flag2.txt`: {fc3fd58dcdad9ab23faca6e9a36e581c}
     - **Exploit Used**
-      - Manaully brute forced Michael's password, and also used Hydra for good measure. His password (password: michael) was weak and easily guessable. This allowed us to SSH into his machine and find flag2. The steps to find the second flag were similar to when we found flag1.
-      - flag2 was discovered in /var/www next to a directory named "html".
-      - Commands:
-        - ssh michael@192.168.1.110
-        - password: michael
-        - cd /var/www
-        - ls -l
-        - cat flag2.txt
+     - Manaully brute forced Michael's password, and also used Hydra for good measure. His password (password: michael) was weak and easily guessable. This allowed us to SSH into his machine and find flag2. The steps to find the second flag were similar to when we found flag1.
+     - flag2 was discovered in /var/www next to a directory named "html".
+       - Commands:
+         - ssh michael@192.168.1.110
+          - password: michael
+          - cd /var/www
+          - ls -l
+          - cat flag2.txt
 
 
 <img width="405" alt="Screen Shot 2022-08-22 at 7 17 21 PM" src="https://user-images.githubusercontent.com/99222430/186041619-59e48a00-7552-4880-980f-7d59bbd8571f.png">
@@ -77,9 +77,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
   - `flag3.txt`: {afc01ab56b50591e7dccf93122770cd2}
     - **Exploit Used** 
-      - Same exploits as flag1 and flag2.
-      - Once in Michael's system, we captured flag3.txt by accessing the MYSQL database
-        - After searching through wp-config.php, we had access to his MYSQL database login credentials and were able to further explore the database.
+     - Same exploits as flag1 and flag2.
+     - Once in Michael's system, we captured flag3.txt by accessing the MYSQL database
+      - After searching through wp-config.php, we had access to his MYSQL database login credentials and were able to further explore the database.
 
 <img width="617" alt="Screen Shot 2022-08-22 at 7 24 15 PM" src="https://user-images.githubusercontent.com/99222430/186042246-c33c6593-133c-467f-8175-6f446edd3e81.png">
 
@@ -97,16 +97,16 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
   - `flag4.txt`: {715dea6c055b9fe3337544932f2941ce}
     - **Exploit Used** 
-      - Unsalted hash and privilege escalation with Python command.
+     - Unsalted hash and privilege escalation with Python command.
       - For flag4, we cracked user Steven's password using John the Ripper, and looked at Stevens privileges using "sudo -l" ti find how we can escalte our privilege to root.
       - After getting access to the MYSQL database, we found the user's password hashes in the wp_users table. The password hashes were saved on the Kali machine in "wp_hashes.txt" for later use.
-          - Commands:
-            - mysql -u root -p
-            - password: R@v3nSecurity
-            - show databases;
-            - use wordpress;
-            - show tables;
-            - select * from wp_users;
+         - Commands:
+           - mysql -u root -p
+           - password: R@v3nSecurity
+           - show databases;
+           - use wordpress;
+           - show tables;
+           - select * from wp_users;
 
 <img width="620" alt="Screen Shot 2022-08-22 at 7 27 22 PM" src="https://user-images.githubusercontent.com/99222430/186042479-5532e4a0-556e-4616-8b8b-6cf2b54be78c.png">
 
