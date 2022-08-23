@@ -55,7 +55,7 @@ Excessive HTTP Errors is implemented as follows:
 HTTP Request Size Monitor is implemented as follows:
   - **Metric**: WHEN sum() of http.resquest.byte OVER all documents
   - **Threshold**: IS ABOVE 3500
-  - **Vulnerability Mitigated**: COde Injection in HTTP requests or DDOS
+  - **Vulnerability Mitigated**: Code Injection in HTTP requests or DDOS
   - **Reliability**: This alert has the potential to create false positives, therefore I give it a medium reliablity. It is possible there is a large number of legitimate HTTP traffic that happens, so it isn't a "highly" reliable alert as of now.
 
 #### CPU Usage Monitor
