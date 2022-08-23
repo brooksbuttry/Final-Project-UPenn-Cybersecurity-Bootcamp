@@ -42,11 +42,11 @@ Inspect the network traffic to complete the following report:
     - Host name: ROTTERDAM-PC
     - IP address: 172.16.4.205
     - MAC address: 00:59:07:b0:63:a4
-    - Wireshark filter used: ip-src==172.16.4.205 and kerberos.CNameString
+    - Wireshark filter used: ip.src==172.16.4.205 and kerberos.CNameString
     
 2. What is the username of the Windows user whose computer is infected?
     - Windows username: matthijs.devries
-    - Wireshark filter used: ip-src==172.16.4.205 and kerberos.CNameString
+    - Wireshark filter used: ip.src==172.16.4.205 and kerberos.CNameString
     - Results:
 
 <img width="633" alt="Screen Shot 2022-08-22 at 6 52 50 PM" src="https://user-images.githubusercontent.com/99222430/186039429-65bcfa83-bc43-4bc4-a417-34e3f13f4d0c.png">
