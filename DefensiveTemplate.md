@@ -27,6 +27,10 @@ The following machines were identified on the network:
   - **Purpose**: Vulnerable WordPress Host
   - **IP Address**: 192.168.1.110
 
+
+![Screen Shot 2022-08-22 at 7 02 41 PM](https://user-images.githubusercontent.com/99222430/186040347-69ee316d-ceb8-43b3-adb3-0def0067b6ee.png)
+
+
 ### Description of Targets
 
 - The target of this attack was: Target 1 (192.168.1.110). 
@@ -35,6 +39,9 @@ The following machines were identified on the network:
 ### Monitoring the Targets
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
+
+<img width="600" alt="Screen Shot 2022-08-22 at 7 04 52 PM" src="https://user-images.githubusercontent.com/99222430/186040555-c6c7e3d1-ad9b-44b1-aa43-ae97d383f19d.png">
+
 
 #### Excessive HTTP Errors
 
