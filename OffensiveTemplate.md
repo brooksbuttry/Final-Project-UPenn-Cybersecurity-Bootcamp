@@ -90,7 +90,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
        - use wordpress;
        - select * from wp_posts;
 
-     <img width="613" alt="Screen Shot 2022-08-22 at 7 24 51 PM" src="https://user-images.githubusercontent.com/99222430/186042296-5890452b-51e7-4f52-98db-20b9999caa8b.png">
+   <img width="613" alt="Screen Shot 2022-08-22 at 7 24 51 PM" src="https://user-images.githubusercontent.com/99222430/186042296-5890452b-51e7-4f52-98db-20b9999caa8b.png">
 
 <img width="621" alt="Screen Shot 2022-08-22 at 7 26 06 PM" src="https://user-images.githubusercontent.com/99222430/186042398-fd16af81-f44c-4245-b512-2d6acc5fb9b5.png">
 
