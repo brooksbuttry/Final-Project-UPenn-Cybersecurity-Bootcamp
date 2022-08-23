@@ -50,13 +50,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         - It was known the users password was weak and obvious. It was guessed before any commands were used but for practice, we used Hydra to crack Michael's password.
         - Command: hydra -l michael -p /usr/sahre/wordlists/rockyou.txt -vV 192.16.1.110 -t 4 ssh
           
-          <img width="1010" alt="Screen Shot 2022-08-22 at 7 11 07 PM" src="https://user-images.githubusercontent.com/99222430/186041080-5cdde71b-7aca-46e9-95b3-27f8802c57d9.png">
+   <img width="1010" alt="Screen Shot 2022-08-22 at 7 11 07 PM" src="https://user-images.githubusercontent.com/99222430/186041080-5cdde71b-7aca-46e9-95b3-27f8802c57d9.png">
    
           
         - flag1 was found in /var/www/html folder after searching through each file in the directory. The flag1 was found in the service.html in an HTML comment near the bottom of the HTML file. 
       
        
-       <img width="624" alt="Screen Shot 2022-08-22 at 7 14 43 PM" src="https://user-images.githubusercontent.com/99222430/186041392-682692bc-fa11-4154-a473-fb3b7292e4e4.png">
+   <img width="624" alt="Screen Shot 2022-08-22 at 7 14 43 PM" src="https://user-images.githubusercontent.com/99222430/186041392-682692bc-fa11-4154-a473-fb3b7292e4e4.png">
 
        
         
